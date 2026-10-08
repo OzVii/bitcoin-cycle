@@ -1,41 +1,41 @@
 {
- "generated_at": "2026-10-08T15:29:27Z",
+ "generated_at": "2026-10-08T16:03:56Z",
  "data_as_of": "2026-10-08T00:00:00Z",
  "stale_hours": 48,
  "sources": {
   "coinmetrics": {
    "ok": true,
-   "last_success": "2026-10-08T15:22:54Z",
+   "last_success": "2026-10-08T16:03:53Z",
    "last_date": "2026-10-07",
    "error": null
   },
   "ohlc_daily": {
    "ok": true,
-   "last_success": "2026-10-08T15:22:54Z",
+   "last_success": "2026-10-08T16:03:53Z",
    "last_date": "2026-10-08",
    "error": null
   },
   "fng": {
    "ok": true,
-   "last_success": "2026-10-08T15:22:54Z",
+   "last_success": "2026-10-08T16:03:53Z",
    "last_date": "2026-10-08",
    "error": null
   },
   "m2": {
-   "ok": false,
-   "last_success": "2026-10-08T15:07:05Z",
+   "ok": true,
+   "last_success": "2026-10-08T16:03:53Z",
    "last_date": "2026-08-01",
-   "error": "ReadTimeout: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=60)"
+   "error": null
   },
   "dollar": {
-   "ok": false,
-   "last_success": "2026-10-08T15:07:05Z",
+   "ok": true,
+   "last_success": "2026-10-08T16:03:53Z",
    "last_date": "2026-10-02",
-   "error": "ReadTimeout: HTTPSConnectionPool(host='fred.stlouisfed.org', port=443): Read timed out. (read timeout=60)"
+   "error": null
   }
  },
  "price_now": {
-  "price": 81618.14,
+  "price": 81015.32,
   "date": "2026-10-08",
   "source": "Bitstamp"
  },
@@ -251,7 +251,7 @@
     "low": 83445.1088682021,
     "high": 88606.66199407028,
     "basis": "200-week SMA × 1.30",
-    "distance_pct": 5.400448271837854
+    "distance_pct": 6.184713497565886
    },
    {
     "id": "buy2",
@@ -261,7 +261,7 @@
     "low": 64188.54528323238,
     "high": 68158.97076466944,
     "basis": "200-week SMA",
-    "distance_pct": -18.92273209858628
+    "distance_pct": -18.319451155718568
    },
    {
     "id": "buy3",
@@ -271,7 +271,7 @@
     "low": 52092.969571525246,
     "high": 55315.21511203196,
     "basis": "Realized price",
-    "distance_pct": -34.20078876855243
+    "distance_pct": -33.711189017362884
    },
    {
     "id": "sell1",
@@ -281,7 +281,7 @@
     "low": 156353.76609077526,
     "high": 166025.1330654624,
     "basis": "MVRV Z = 3.55 (base 5 × 0.71)",
-    "distance_pct": 97.49218688164032
+    "distance_pct": 98.9616896879736
    },
    {
     "id": "sell2",
@@ -291,7 +291,7 @@
     "low": 177205.92539462526,
     "high": 188167.1166561485,
     "basis": "MVRV Z = 4.26 (base 6 × 0.71)",
-    "distance_pct": 123.83078201167885
+    "distance_pct": 125.49626542904089
    },
    {
     "id": "sell3",
@@ -301,7 +301,7 @@
     "low": 198058.08469847523,
     "high": 210309.10024683454,
     "basis": "MVRV Z = 4.97 (base 7 × 0.71)",
-    "distance_pct": 150.16937714171738
+    "distance_pct": 152.03084117010818
    },
    {
     "id": "pi",
@@ -311,11 +311,11 @@
     "low": 151148.31679146283,
     "high": 160497.69721155334,
     "basis": "2 × 350-day SMA",
-    "distance_pct": 90.91712577805386
+    "distance_pct": 92.33770477177413
    }
   ]
  },
- "summary": "Total score +18. Strongest buy setup: valuation is still moderate and the trend has turned up. Main drivers: valuation & cycle (MVRV Z 1.1, 200W multiple 1.31) favours buying and trend (uptrend confirmed) favours buying. Watch whether the weekly close holds above the lower edge of the support band ($70,758). The nearest sell level, Sell 1, is +97% away.",
+ "summary": "Total score +18. Strongest buy setup: valuation is still moderate and the trend has turned up. Main drivers: valuation & cycle (MVRV Z 1.1, 200W multiple 1.31) favours buying and trend (uptrend confirmed) favours buying. Watch whether the weekly close holds above the lower edge of the support band ($70,758). The nearest sell level, Sell 1, is +99% away.",
  "changes": [
   "The weekly close rose above Buy 1 ($86,026)."
  ],
