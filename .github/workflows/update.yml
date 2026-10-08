@@ -1,0 +1,72 @@
+name: Päivitä data ja julkaise sivu
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # päivittäin 06:00 UTC
+  workflow_dispatch:
+    inputs:
+      probe:
+        description: "Aja myös datalähteiden testi (probe_sources.py)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # historian commit takaisin repoon
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update-and-pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Asenna riippuvuudet
+        run: pip install -r requirements.txt
+
+      - name: Datalähteiden testi
+        if: ${{ inputs.probe }}
+        run: python scripts/probe_sources.py
+
+      - name: Yksikkötestit
+        run: python -m pytest -q tests
+
+      # Ei kaadu, vaikka lähde olisi alhaalla: vanha data jää käyttöön ja virhe näkyy sivulla.
+      - name: Hae uusi data
+        run: python scripts/fetch_all.py
+
+      - name: Laske signaalit ja kirjoita JSON
+        run: python scripts/build.py
+
+      - name: Tallenna historia repoon
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data site/data
+          if git diff --cached --quiet; then
+            echo "Ei muutoksia."
+          else
+            git commit -m "Datapäivitys $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

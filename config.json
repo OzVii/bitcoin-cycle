@@ -1,0 +1,141 @@
+{
+  "halvings": ["2012-11-28", "2016-07-09", "2020-05-11", "2024-04-20"],
+  "halving_interval_days": 1460,
+
+  "data": {
+    "coinmetrics_start": "2010-01-01",
+    "coinmetrics_metrics": ["PriceUSD", "CapMVRVCur", "CapMrktCurUSD", "IssTotUSD", "SplyCur"],
+    "bitstamp_start": "2011-08-01",
+    "overlap_days": 7,
+    "fred_overlap_days": 120,
+    "m2_release_lag_days": 55,
+    "dollar_release_lag_days": 7,
+    "stale_hours": 48
+  },
+
+  "indicators": {
+    "sma200w_weeks": 200,
+    "band_sma_weeks": 20,
+    "band_ema_weeks": 21,
+    "sma50w_weeks": 50,
+    "sma50w_slope_weeks": 4,
+    "trend_confirm_weeks": 2,
+    "rsi_period": 14,
+    "macd": [12, 26, 9],
+    "mvrv_z_min_days": 365,
+    "mvrv_z_std_window_days": 1460,
+    "_mvrv_z_std_window_ohje": "σ:n laskentaikkuna päivinä (1460 = 4 v liukuva). null = kasvava ikkuna koko historiasta.",
+    "puell_window_days": 365,
+    "pi_short_days": 111,
+    "pi_long_days": 350,
+    "pi_multiplier": 2,
+    "fng_avg_days": 28,
+    "dollar_change_days": 91,
+    "m2_accel_months": 3,
+    "divergence": {
+      "left_bars": 3,
+      "right_bars": 2,
+      "min_gap_weeks": 4,
+      "max_gap_weeks": 40,
+      "active_weeks": 6,
+      "bear_min_rsi": 60,
+      "bull_max_rsi": 45
+    },
+    "fib_retracements": [0.382, 0.5, 0.618, 0.786],
+    "fib_extensions": [1.618, 2.618],
+    "fib_scale": "linear",
+    "cycle_bottom_window_days": 600,
+    "cycle_top_window_days": 900,
+    "cycle_top_confirm_drawdown": 0.5
+  },
+
+  "scoring": {
+    "layer_weights": {
+      "valuation": 0.40,
+      "trend": 0.25,
+      "momentum": 0.15,
+      "sentiment": 0.10,
+      "macro": 0.10
+    },
+    "valuation": {
+      "weights": {"mvrv_z": 0.4, "wma200": 0.3, "puell": 0.3},
+      "mvrv_z": [[0, 100], [2, 20], [5, -60], [7, -100]],
+      "wma200": [[1.0, 100], [1.0, 80], [1.5, 20], [3.0, -40], [5.0, -100]],
+      "puell": [[0.5, 100], [0.5, 60], [1.0, 0], [2.5, -60], [4.0, -100]],
+      "pi_cycle_distance_pct": [[5, -70], [5, 0]],
+      "pi_cycle_cross_weeks": 8,
+      "pi_cycle_cross_score": -100,
+      "pi_cycle_mode": "cap",
+      "_pi_cycle_mode_ohje": "cap = Pi Cycle voi vain laskea kerroksen pistettä (min), avg = mukana keskiarvossa painolla pi_cycle_weight",
+      "pi_cycle_weight": 0.2,
+      "cycle_decay": {
+        "enabled": true,
+        "_ohje": "Myyntipuolen kynnykset (pisteet < 0) skaalataan edellisen halving-jakson huippuarvon mukaan: anchor_score-pisteen raja = reference_ratio × huippuarvo. Ostopuoli ei muutu.",
+        "metrics": {"mvrv_z": "mvrv_z", "wma200": "wma200_mult"},
+        "reference_ratio": 0.6,
+        "anchor_score": -60,
+        "min_scale": 0.3,
+        "max_scale": 1.0,
+        "min_valid_weeks": 52,
+        "apply_to_zones": true
+      }
+    },
+    "trend": {
+      "band_score": 60,
+      "inside_band_factor": 0.5,
+      "slope_pct": [[-5, -40], [0, 0], [5, 40]]
+    },
+    "momentum": {
+      "weights": {"rsi_weekly": 0.6, "rsi_monthly": 0.4},
+      "rsi_weekly": [[25, 100], [30, 60], [45, 0], [70, 0], [80, -60], [90, -100]],
+      "rsi_monthly": [[35, 60], [50, 0], [85, -40], [95, -80]],
+      "divergence_score": 40
+    },
+    "sentiment": {
+      "fng": [[15, 100], [85, -100]],
+      "use": "avg4w"
+    },
+    "macro": {
+      "m2_accel_pp": [[-2, -50], [0, 0], [2, 50]],
+      "dollar_13w_pct": [[-5, 50], [0, 0], [5, -50]]
+    }
+  },
+
+  "phases": {
+    "names": {
+      "1": "Bottom / accumulation",
+      "2": "Early bull",
+      "3": "Bull market",
+      "4": "Overheated",
+      "5": "Bear market"
+    },
+    "bottom_min_valuation": 50,
+    "early_min_valuation": 25,
+    "overheat_max_valuation": -40,
+    "overheat_soft_max_valuation": -20,
+    "overheat_fng_min": 75,
+    "overheat_max_total": -30,
+    "hysteresis_margin": 10,
+    "min_weeks_to_switch": 2
+  },
+
+  "zones": {
+    "buy": [
+      {"id": "buy1", "name": "Buy 1", "type": "wma200", "mult": 1.3},
+      {"id": "buy2", "name": "Buy 2", "type": "wma200", "mult": 1.0},
+      {"id": "buy3", "name": "Buy 3", "type": "realized_price"}
+    ],
+    "sell": [
+      {"id": "sell1", "name": "Sell 1", "type": "mvrv_z", "z": 5},
+      {"id": "sell2", "name": "Sell 2", "type": "mvrv_z", "z": 6},
+      {"id": "sell3", "name": "Sell 3", "type": "mvrv_z", "z": 7}
+    ],
+    "show_pi_cycle": true,
+    "range_pct": 3
+  },
+
+  "backtest": {
+    "start": "2014-01-01",
+    "forward_weeks": [13, 26, 52]
+  }
+}
