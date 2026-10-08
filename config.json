@@ -8,6 +8,8 @@
     "bitstamp_start": "2011-08-01",
     "overlap_days": 7,
     "fred_overlap_days": 120,
+    "fred_timeout_s": 20,
+    "fred_retries": 2,
     "m2_release_lag_days": 55,
     "dollar_release_lag_days": 7,
     "stale_hours": 48

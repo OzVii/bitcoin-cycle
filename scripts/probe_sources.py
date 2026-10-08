@@ -139,7 +139,7 @@ def fred():
                 o = r.json()["observations"]
                 report(f"fred_api_{sid}", True, rows=len(o), first=o[0]["date"], last=o[-1]["date"])
             except Exception as e:
-                report(f"fred_api_{sid}", False, error=str(e))
+                report(f"fred_api_{sid}", False, error=str(e).replace(key, "***"))
         else:
             report(f"fred_api_{sid}", False, error="FRED_API_KEY puuttuu, ohitettu")
 

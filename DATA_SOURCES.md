@@ -21,7 +21,7 @@ GitHub Actionsin (US/Azure) palvelimelta ei voi testata ennen kuin repo on olema
 | Fear & Greed | alternative.me `/fng/?limit=0` | ✅ | 2018-02-01 → tänään | Kentät: value, value_classification, timestamp |
 | M2 | FRED `M2SL` | ✅ (CSV ilman avainta) | 1959-01 → 2026-08 | Kuukausidata, ~1 kk viive |
 | Dollari-indeksi | FRED `DTWEXBGS` | ✅ (CSV ilman avainta) | 2006-01 → 2026-09-25 | Päivädata, ~1 vko viive |
-| FRED API (avaimella) | `api.stlouisfed.org` | ⏸ ei testattu | – | Avainta ei ole paikallisesti |
+| FRED API (avaimella) | `api.stlouisfed.org` | ensisijainen GitHubissa | – | Secret `FRED_API_KEY`. CSV-vienti aikakatkaistui GitHub Actionsista (testi 2026-10-08), joten API on ensisijainen ja CSV varalla |
 
 Viimeisimmät arvot (2026-10-03): PriceUSD ≈ 84 756 $, MVRV ≈ 1,58, F&G = 65.
 

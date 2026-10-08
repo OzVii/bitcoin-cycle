@@ -116,7 +116,9 @@ Repon sivulla **Settings**:
 1. **Pages** (vasen valikko) → *Build and deployment* → **Source: GitHub Actions**.
 2. **Actions → General** → alimpana *Workflow permissions* → valitse **Read and write permissions** → **Save**. Tämä tarvitaan, jotta päivitysajo voi tallentaa uudet datarivit repoon.
 
-API-avaimia tai secretejä ei tarvita.
+3. **Secrets and variables → Actions → New repository secret**: nimi `FRED_API_KEY`, arvoksi ilmainen avaimesi osoitteesta https://fredaccount.stlouisfed.org/apikeys. FRED:n avaimeton CSV-vienti ei vastaa GitHubin palvelimilta, joten ilman avainta makrodata (M2, dollari) ei päivity GitHubissa. Muu sivu toimii silti.
+
+Omalla koneella avainta ei tarvita, koska siellä CSV-vienti toimii.
 
 ### 2.5 Ensimmäinen ajo
 
