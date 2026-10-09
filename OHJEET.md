@@ -74,7 +74,7 @@ Kaikki kynnysarvot, painot ja parametrit ovat tiedostossa **`config.json`**. Muo
 
 ## Osa 2: Julkaisu GitHubiin (ilmainen verkkosivu)
 
-Lopputulos on osoitteessa `https://<käyttäjätunnus>.github.io/<repon-nimi>/`. GitHub päivittää datan joka aamu klo 06.00 UTC (9.00 Suomen kesäaikaa), vaikka oma koneesi olisi kiinni.
+Lopputulos on osoitteessa `https://<käyttäjätunnus>.github.io/<repon-nimi>/`. GitHub päivittää datan kahdesti päivässä, klo 05.23 ja 17.23 UTC (8.23 ja 20.23 Suomen kesäaikaa), vaikka oma koneesi olisi kiinni. GitHub ei takaa ajastettujen ajojen aikaa: ajo voi myöhästyä tai joskus jäädä väliin, ja siksi ajoja on kaksi. Päivityksen voi aina käynnistää myös käsin (*Actions → Run workflow*).
 
 ### 2.1 Valmistelut (kerran)
 

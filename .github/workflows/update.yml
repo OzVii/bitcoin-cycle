@@ -2,7 +2,10 @@ name: Päivitä data ja julkaise sivu
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # päivittäin 06:00 UTC
+    # GitHub viivästyttää tai ohittaa tasatunnin ajastuksia ruuhkassa, joten ajot ovat
+    # epätasaisella minuutilla. Iltaajo on varalla, jos aamun ajo jää väliin.
+    - cron: "23 5 * * *"    # 05:23 UTC
+    - cron: "23 17 * * *"   # 17:23 UTC
   workflow_dispatch:
     inputs:
       probe:
@@ -63,6 +66,7 @@ jobs:
             echo "Ei muutoksia."
           else
             git commit -m "Datapäivitys $(date -u +%Y-%m-%d)"
+            git pull --rebase -q origin main   # jos toinen ajo ehti tallentaa välissä
             git push
           fi
 

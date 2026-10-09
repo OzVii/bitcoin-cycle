@@ -32,4 +32,4 @@ Viimeisimmät arvot (2026-10-03): PriceUSD ≈ 84 756 $, MVRV ≈ 1,58, F&G = 65
 3. **Realisoitu hinta** = `PriceUSD / CapMVRVCur` toimii. Tarjonta saadaan suoraan `SplyCur`-kentästä, joten myyntitasot = (realisoitu arvo + k × σ) / SplyCur.
 4. **Historian pituus vs. backtest.** 200 viikon SMA vaatii 1400 päivää, joten se on saatavilla vasta noin 2014-05 alkaen (data alkaa 2010-07). Backtest vuodesta 2014 on mahdollinen, mutta arvostuskerros on täysi vasta kesästä 2014. Fear & Greed puuttuu ennen 2018-02, joten sen paino jaetaan muille.
 5. **FRED toimii ilman API-avainta** CSV-viennin (`fredgraph.csv`) kautta. Secretin voi siis jättää kokonaan pois, tai käyttää API:a ensisijaisena ja CSV:tä varalla.
-6. **Viiveet:** CoinMetrics päivittyy noin vuorokauden viiveellä (06:00 UTC -ajossa eilinen on yleensä mukana). M2 julkaistaan noin kuukauden viiveellä, mikä riittää makrokerrokselle.
+6. **Viiveet:** CoinMetrics päivittyy noin vuorokauden viiveellä. Jos eilinen ei ole vielä mukana aamun 05:23 UTC -ajossa, iltaajo (17:23 UTC) hakee sen. M2 julkaistaan noin kuukauden viiveellä, mikä riittää makrokerrokselle.
