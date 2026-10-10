@@ -1,42 +1,42 @@
 {
- "generated_at": "2026-10-09T21:47:15Z",
- "data_as_of": "2026-10-09T00:00:00Z",
+ "generated_at": "2026-10-10T11:14:00Z",
+ "data_as_of": "2026-10-10T00:00:00Z",
  "stale_hours": 48,
  "sources": {
   "coinmetrics": {
    "ok": true,
-   "last_success": "2026-10-09T21:47:10Z",
-   "last_date": "2026-10-08",
+   "last_success": "2026-10-10T11:13:57Z",
+   "last_date": "2026-10-09",
    "error": null
   },
   "ohlc_daily": {
    "ok": true,
-   "last_success": "2026-10-09T21:47:10Z",
-   "last_date": "2026-10-09",
+   "last_success": "2026-10-10T11:13:57Z",
+   "last_date": "2026-10-10",
    "error": null
   },
   "fng": {
    "ok": true,
-   "last_success": "2026-10-09T21:47:10Z",
-   "last_date": "2026-10-09",
+   "last_success": "2026-10-10T11:13:57Z",
+   "last_date": "2026-10-10",
    "error": null
   },
   "m2": {
    "ok": true,
-   "last_success": "2026-10-09T21:47:10Z",
+   "last_success": "2026-10-10T11:13:57Z",
    "last_date": "2026-08-01",
    "error": null
   },
   "dollar": {
    "ok": true,
-   "last_success": "2026-10-09T21:47:10Z",
+   "last_success": "2026-10-10T11:13:57Z",
    "last_date": "2026-10-02",
    "error": null
   }
  },
  "price_now": {
-  "price": 82480.29,
-  "date": "2026-10-09",
+  "price": 82747.4,
+  "date": "2026-10-10",
   "source": "Bitstamp"
  },
  "signal": {
@@ -251,7 +251,7 @@
     "low": 83445.1088682021,
     "high": 88606.66199407028,
     "basis": "200-week SMA × 1.30",
-    "distance_pct": 4.298718434593529
+    "distance_pct": 3.9620404159359746
    },
    {
     "id": "buy2",
@@ -261,7 +261,7 @@
     "low": 64188.54528323238,
     "high": 68158.97076466944,
     "basis": "200-week SMA",
-    "distance_pct": -19.770216588774215
+    "distance_pct": -20.02919968004926
    },
    {
     "id": "buy3",
@@ -271,7 +271,7 @@
     "low": 52092.969571525246,
     "high": 55315.21511203196,
     "basis": "Realized price",
-    "distance_pct": -34.88857478340752
+    "distance_pct": -35.098755559958846
    },
    {
     "id": "sell1",
@@ -281,7 +281,7 @@
     "low": 156353.76609077526,
     "high": 166025.1330654624,
     "basis": "MVRV Z = 3.55 (base 5 × 0.71)",
-    "distance_pct": 95.42784049149056
+    "distance_pct": 94.79699613295263
    },
    {
     "id": "sell2",
@@ -291,7 +291,7 @@
     "low": 177205.92539462526,
     "high": 188167.1166561485,
     "basis": "MVRV Z = 4.26 (base 6 × 0.71)",
-    "distance_pct": 121.49112354647018
+    "distance_pct": 120.77614647153494
    },
    {
     "id": "sell3",
@@ -301,7 +301,7 @@
     "low": 198058.08469847523,
     "high": 210309.10024683454,
     "basis": "MVRV Z = 4.97 (base 7 × 0.71)",
-    "distance_pct": 147.55440660144976
+    "distance_pct": 146.75529681011716
    },
    {
     "id": "pi",
@@ -311,7 +311,7 @@
     "low": 151148.31679146283,
     "high": 160497.69721155334,
     "basis": "2 × 350-day SMA",
-    "distance_pct": 88.92150718857572
+    "distance_pct": 88.31166538345386
    }
   ]
  },
@@ -321,17 +321,17 @@
  ],
  "preview": {
   "week_start": "2026-10-05",
-  "data_through": "2026-10-08",
-  "close": 81731.8801367154,
-  "total": 19.528276493632713,
+  "data_through": "2026-10-09",
+  "close": 82562.555254436,
+  "total": 19.220102496049723,
   "phase": 2,
   "phase_name": "Early bull",
   "layers": {
-   "valuation": 40.92684991826487,
-   "trend": 34.2618757454042,
+   "valuation": 39.29302234193894,
+   "trend": 34.428776035138,
    "momentum": -1.495997224415133,
-   "sentiment": -49.38775510204084,
-   "macro": -2.447573161579286
+   "sentiment": -49.69387755102039,
+   "macro": 0.8948688925395354
   }
  },
  "fib": {
@@ -372,7 +372,7 @@
  },
  "halving": {
   "last": "2024-04-20",
-  "days_since": 901,
+  "days_since": 902,
   "next_estimate": "2028-04-19",
   "next_is_estimate": true,
   "cycles": [
