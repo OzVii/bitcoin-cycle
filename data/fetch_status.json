@@ -1,46 +1,46 @@
 {
   "coinmetrics": {
-    "checked_at": "2026-10-27T21:24:13Z",
+    "checked_at": "2026-10-28T11:24:37Z",
     "ok": true,
-    "last_success": "2026-10-27T21:24:13Z",
+    "last_success": "2026-10-28T11:24:37Z",
     "error": null,
-    "rows": 6143,
-    "added": 0,
-    "last_date": "2026-10-26"
+    "rows": 6144,
+    "added": 1,
+    "last_date": "2026-10-27"
   },
   "ohlc_daily": {
-    "checked_at": "2026-10-27T21:24:13Z",
+    "checked_at": "2026-10-28T11:24:37Z",
     "ok": true,
-    "last_success": "2026-10-27T21:24:13Z",
+    "last_success": "2026-10-28T11:24:37Z",
     "error": null,
-    "rows": 5550,
-    "added": 0,
-    "last_date": "2026-10-27",
+    "rows": 5551,
+    "added": 1,
+    "last_date": "2026-10-28",
     "via": "bitstamp"
   },
   "fng": {
-    "checked_at": "2026-10-27T21:24:13Z",
+    "checked_at": "2026-10-28T11:24:37Z",
     "ok": true,
-    "last_success": "2026-10-27T21:24:13Z",
+    "last_success": "2026-10-28T11:24:37Z",
     "error": null,
-    "rows": 3187,
-    "added": 0,
-    "last_date": "2026-10-27"
+    "rows": 3188,
+    "added": 1,
+    "last_date": "2026-10-28"
   },
   "m2": {
-    "checked_at": "2026-10-27T21:24:13Z",
+    "checked_at": "2026-10-28T11:24:37Z",
     "ok": true,
-    "last_success": "2026-10-27T21:24:13Z",
+    "last_success": "2026-10-28T11:24:37Z",
     "error": null,
     "rows": 813,
-    "added": 1,
+    "added": 0,
     "last_date": "2026-09-01",
     "via": "api"
   },
   "dollar": {
-    "checked_at": "2026-10-27T21:24:13Z",
+    "checked_at": "2026-10-28T11:24:37Z",
     "ok": true,
-    "last_success": "2026-10-27T21:24:13Z",
+    "last_success": "2026-10-28T11:24:37Z",
     "error": null,
     "rows": 5217,
     "added": 0,
