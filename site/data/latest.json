@@ -1,42 +1,42 @@
 {
- "generated_at": "2026-10-31T20:30:35Z",
- "data_as_of": "2026-10-31T00:00:00Z",
+ "generated_at": "2026-11-01T11:53:39Z",
+ "data_as_of": "2026-11-01T00:00:00Z",
  "stale_hours": 48,
  "sources": {
   "coinmetrics": {
    "ok": true,
-   "last_success": "2026-10-31T20:30:31Z",
-   "last_date": "2026-10-30",
+   "last_success": "2026-11-01T11:53:36Z",
+   "last_date": "2026-10-31",
    "error": null
   },
   "ohlc_daily": {
    "ok": true,
-   "last_success": "2026-10-31T20:30:31Z",
-   "last_date": "2026-10-31",
+   "last_success": "2026-11-01T11:53:36Z",
+   "last_date": "2026-11-01",
    "error": null
   },
   "fng": {
    "ok": true,
-   "last_success": "2026-10-31T20:30:31Z",
-   "last_date": "2026-10-31",
+   "last_success": "2026-11-01T11:53:36Z",
+   "last_date": "2026-11-01",
    "error": null
   },
   "m2": {
    "ok": true,
-   "last_success": "2026-10-31T20:30:31Z",
+   "last_success": "2026-11-01T11:53:36Z",
    "last_date": "2026-09-01",
    "error": null
   },
   "dollar": {
    "ok": true,
-   "last_success": "2026-10-31T20:30:31Z",
+   "last_success": "2026-11-01T11:53:36Z",
    "last_date": "2026-10-23",
    "error": null
   }
  },
  "price_now": {
-  "price": 77439.21,
-  "date": "2026-10-31",
+  "price": 77828.19,
+  "date": "2026-11-01",
   "source": "Bitstamp"
  },
  "signal": {
@@ -251,7 +251,7 @@
     "low": 84674.0502462146,
     "high": 89911.62036453716,
     "basis": "200-week SMA × 1.30",
-    "distance_pct": 12.724336037746076
+    "distance_pct": 12.160947473371643
    },
    {
     "id": "buy2",
@@ -261,7 +261,7 @@
     "low": 65133.88480478046,
     "high": 69162.78489579781,
     "basis": "200-week SMA",
-    "distance_pct": -13.288972278656864
+    "distance_pct": -13.722348097406446
    },
    {
     "id": "buy3",
@@ -271,7 +271,7 @@
     "low": 52446.85433803675,
     "high": 55690.989657915314,
     "basis": "Realized price",
-    "distance_pct": -30.178882251024998
+    "distance_pct": -30.527843448529346
    },
    {
     "id": "sell1",
@@ -281,7 +281,7 @@
     "low": 155268.33543936315,
     "high": 164872.56237375678,
     "basis": "MVRV Z = 3.55 (base 5 × 0.71)",
-    "distance_pct": 106.70465117937016
+    "distance_pct": 105.67155539215283
    },
    {
     "id": "sell2",
@@ -291,7 +291,7 @@
     "low": 175832.63165962845,
     "high": 186708.87691692504,
     "basis": "MVRV Z = 4.26 (base 6 × 0.71)",
-    "distance_pct": 134.0813578654492
+    "distance_pct": 132.91143516028927
    },
    {
     "id": "sell3",
@@ -301,7 +301,7 @@
     "low": 196396.92787989372,
     "high": 208545.19146009334,
     "basis": "MVRV Z = 4.97 (base 7 × 0.71)",
-    "distance_pct": 161.45806455152822
+    "distance_pct": 160.1513149284257
    },
    {
     "id": "pi",
@@ -311,24 +311,24 @@
     "low": 148142.79496072954,
     "high": 157306.26681397058,
     "basis": "2 × 350-day SMA",
-    "distance_pct": 97.21860655261081
+    "distance_pct": 96.23292137122816
    }
   ]
  },
- "summary": "Total score +22. Strongest buy setup: valuation is still moderate and the trend has turned up. Main drivers: valuation & cycle (MVRV Z 0.9, 200W multiple 1.19) favours buying and trend (uptrend confirmed) favours buying. Watch whether the weekly close holds above the lower edge of the support band ($72,353). The nearest sell level, Sell 1, is +107% away.",
+ "summary": "Total score +22. Strongest buy setup: valuation is still moderate and the trend has turned up. Main drivers: valuation & cycle (MVRV Z 0.9, 200W multiple 1.19) favours buying and trend (uptrend confirmed) favours buying. Watch whether the weekly close holds above the lower edge of the support band ($72,353). The nearest sell level, Sell 1, is +106% away.",
  "changes": [],
  "preview": {
   "week_start": "2026-10-26",
-  "data_through": "2026-10-30",
-  "close": 77109.5907473057,
-  "total": 26.240652154091364,
+  "data_through": "2026-10-31",
+  "close": 77401.0172870368,
+  "total": 26.591020250836046,
   "phase": 2,
   "phase_name": "Early bull",
   "layers": {
-   "valuation": 46.39791343781765,
-   "trend": 39.19014562127673,
-   "momentum": -1.495997224415133,
-   "sentiment": -24.081632653061234,
+   "valuation": 45.772356417457914,
+   "trend": 39.250134863853376,
+   "momentum": -0.10904673217345524,
+   "sentiment": -20.30612244897958,
    "macro": 5.1651322261351265
   }
  },
@@ -370,7 +370,7 @@
  },
  "halving": {
   "last": "2024-04-20",
-  "days_since": 923,
+  "days_since": 924,
   "next_estimate": "2028-04-19",
   "next_is_estimate": true,
   "cycles": [
