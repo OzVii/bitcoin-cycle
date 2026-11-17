@@ -1,41 +1,41 @@
 {
- "generated_at": "2026-11-17T14:36:30Z",
+ "generated_at": "2026-11-17T23:53:46Z",
  "data_as_of": "2026-11-17T00:00:00Z",
  "stale_hours": 48,
  "sources": {
   "coinmetrics": {
    "ok": true,
-   "last_success": "2026-11-17T14:36:27Z",
+   "last_success": "2026-11-17T23:53:43Z",
    "last_date": "2026-11-16",
    "error": null
   },
   "ohlc_daily": {
    "ok": true,
-   "last_success": "2026-11-17T14:36:27Z",
+   "last_success": "2026-11-17T23:53:43Z",
    "last_date": "2026-11-17",
    "error": null
   },
   "fng": {
    "ok": true,
-   "last_success": "2026-11-17T14:36:27Z",
+   "last_success": "2026-11-17T23:53:43Z",
    "last_date": "2026-11-17",
    "error": null
   },
   "m2": {
    "ok": true,
-   "last_success": "2026-11-17T14:36:27Z",
+   "last_success": "2026-11-17T23:53:43Z",
    "last_date": "2026-09-01",
    "error": null
   },
   "dollar": {
    "ok": true,
-   "last_success": "2026-11-17T14:36:27Z",
+   "last_success": "2026-11-17T23:53:43Z",
    "last_date": "2026-11-13",
    "error": null
   }
  },
  "price_now": {
-  "price": 65192.45,
+  "price": 64905.76,
   "date": "2026-11-17",
   "source": "Bitstamp"
  },
@@ -44,7 +44,7 @@
   "week_end": "2026-11-15",
   "close_date": "2026-11-15",
   "close": 65189.110705488,
-  "total": 32.95047720479852,
+  "total": 32.95047712379103,
   "phase": 2,
   "phase_name": "Early bull",
   "phase_candidate": 2,
@@ -52,11 +52,11 @@
    {
     "key": "valuation",
     "name": "Valuation & cycle",
-    "score": 63.339938436651344,
+    "score": 63.33993823413263,
     "weight": 0.4,
     "nominal_weight": 0.4,
     "components": {
-     "mvrv_z": 84.32993984828005,
+     "mvrv_z": 84.32993934198328,
      "wma200": 100.0,
      "puell": -1.3067916755356013,
      "pi_cycle": 0.0
@@ -251,7 +251,7 @@
     "low": 85706.49340895205,
     "high": 91007.9259909491,
     "basis": "200-week SMA × 1.30",
-    "distance_pct": 35.53288716707315
+    "distance_pct": 36.131538556748374
    },
    {
     "id": "buy2",
@@ -261,47 +261,47 @@
     "low": 65928.07185304003,
     "high": 70006.0969161147,
     "basis": "200-week SMA",
-    "distance_pct": 4.256067051594736
+    "distance_pct": 4.7165681205756815
    },
    {
     "id": "buy3",
     "name": "Buy 3",
     "kind": "buy",
-    "price": 53679.5241904155,
-    "low": 52069.13846470303,
-    "high": 55289.90991612797,
+    "price": 53679.52381854287,
+    "low": 52069.13810398658,
+    "high": 55289.909533099155,
     "basis": "Realized price",
-    "distance_pct": -17.659906644994173
+    "distance_pct": -17.296209429574716
    },
    {
     "id": "sell1",
     "name": "Sell 1",
     "kind": "sell",
-    "price": 157897.7709172856,
-    "low": 153160.83778976704,
-    "high": 162634.70404480418,
+    "price": 157897.770545413,
+    "low": 153160.8374290506,
+    "high": 162634.7036617754,
     "basis": "MVRV Z = 3.55 (base 5 × 0.71)",
-    "distance_pct": 142.20254173188093
+    "distance_pct": 143.27235448042362
    },
    {
     "id": "sell2",
     "name": "Sell 2",
     "kind": "sell",
-    "price": 178741.4202626596,
-    "low": 173379.1776547798,
-    "high": 184103.6628705394,
+    "price": 178741.419890787,
+    "low": 173379.17729406338,
+    "high": 184103.6624875106,
     "basis": "MVRV Z = 4.26 (base 6 × 0.71)",
-    "distance_pct": 174.17503140725591
+    "distance_pct": 175.38606726242324
    },
    {
     "id": "sell3",
     "name": "Sell 3",
     "kind": "sell",
-    "price": 199585.0696080336,
-    "low": 193597.5175197926,
-    "high": 205572.6216962746,
+    "price": 199585.06923616098,
+    "low": 193597.51715907615,
+    "high": 205572.62131324582,
     "basis": "MVRV Z = 4.97 (base 7 × 0.71)",
-    "distance_pct": 206.1475210826309
+    "distance_pct": 207.49978004442283
    },
    {
     "id": "pi",
@@ -311,11 +311,11 @@
     "low": 146127.2633829763,
     "high": 155166.0631798614,
     "basis": "2 × 350-day SMA",
-    "distance_pct": 131.07992303007302
+    "distance_pct": 132.1006075291605
    }
   ]
  },
- "summary": "Total score +33. Strongest buy setup: valuation is still moderate and the trend has turned up. Main drivers: valuation & cycle (MVRV Z 0.4, 200W multiple 0.96) favours buying and trend (uptrend confirmed) favours buying. Watch whether the weekly close holds above the lower edge of the support band ($73,843). The nearest sell level, Sell 1, is +142% away.",
+ "summary": "Total score +33. Strongest buy setup: valuation is still moderate and the trend has turned up. Main drivers: valuation & cycle (MVRV Z 0.4, 200W multiple 0.96) favours buying and trend (uptrend confirmed) favours buying. Watch whether the weekly close holds above the lower edge of the support band ($73,843). The nearest sell level, Sell 1, is +143% away.",
  "changes": [
   "The weekly close fell below Buy 2 ($67,967).",
   "Sentiment layer score moved +7 → +32."
@@ -324,11 +324,11 @@
   "week_start": "2026-11-16",
   "data_through": "2026-11-16",
   "close": 64942.5103492928,
-  "total": 11.651900803590976,
+  "total": 11.651900724948398,
   "phase": 2,
   "phase_name": "Early bull",
   "layers": {
-   "valuation": 64.46250078730085,
+   "valuation": 64.4625005906944,
    "trend": -76.51518333768492,
    "momentum": 15.831636569778855,
    "sentiment": 37.346938775510196,
