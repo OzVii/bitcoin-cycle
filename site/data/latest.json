@@ -1,41 +1,41 @@
 {
- "generated_at": "2026-11-22T13:25:52Z",
+ "generated_at": "2026-11-22T22:36:32Z",
  "data_as_of": "2026-11-22T00:00:00Z",
  "stale_hours": 48,
  "sources": {
   "coinmetrics": {
    "ok": true,
-   "last_success": "2026-11-22T13:25:49Z",
+   "last_success": "2026-11-22T22:35:47Z",
    "last_date": "2026-11-21",
    "error": null
   },
   "ohlc_daily": {
    "ok": true,
-   "last_success": "2026-11-22T13:25:49Z",
+   "last_success": "2026-11-22T22:35:47Z",
    "last_date": "2026-11-22",
    "error": null
   },
   "fng": {
    "ok": true,
-   "last_success": "2026-11-22T13:25:49Z",
+   "last_success": "2026-11-22T22:35:47Z",
    "last_date": "2026-11-22",
    "error": null
   },
   "m2": {
    "ok": true,
-   "last_success": "2026-11-22T13:25:49Z",
+   "last_success": "2026-11-22T22:35:47Z",
    "last_date": "2026-09-01",
    "error": null
   },
   "dollar": {
    "ok": true,
-   "last_success": "2026-11-22T13:25:49Z",
+   "last_success": "2026-11-22T22:35:47Z",
    "last_date": "2026-11-13",
    "error": null
   }
  },
  "price_now": {
-  "price": 60643.2,
+  "price": 60700.12,
   "date": "2026-11-22",
   "source": "Bitstamp"
  },
@@ -251,7 +251,7 @@
     "low": 85706.49340895205,
     "high": 91007.9259909491,
     "basis": "200-week SMA × 1.30",
-    "distance_pct": 45.7001109769118
+    "distance_pct": 45.56348438841731
    },
    {
     "id": "buy2",
@@ -261,7 +261,7 @@
     "low": 65928.07185304003,
     "high": 70006.0969161147,
     "basis": "200-week SMA",
-    "distance_pct": 12.077008443778304
+    "distance_pct": 11.97191106801332
    },
    {
     "id": "buy3",
@@ -271,7 +271,7 @@
     "low": 52069.13810398658,
     "high": 55289.909533099155,
     "basis": "Realized price",
-    "distance_pct": -11.483028899294778
+    "distance_pct": -11.566033446815482
    },
    {
     "id": "sell1",
@@ -281,7 +281,7 @@
     "low": 153160.8374290506,
     "high": 162634.7036617754,
     "basis": "MVRV Z = 3.55 (base 5 × 0.71)",
-    "distance_pct": 160.37176558198283
+    "distance_pct": 160.12760855400776
    },
    {
     "id": "sell2",
@@ -291,7 +291,7 @@
     "low": 173379.17729406338,
     "high": 184103.6624875106,
     "basis": "MVRV Z = 4.26 (base 6 × 0.71)",
-    "distance_pct": 194.74272447823827
+    "distance_pct": 194.46633695417236
    },
    {
     "id": "sell3",
@@ -301,7 +301,7 @@
     "low": 193597.51715907615,
     "high": 205572.62131324582,
     "basis": "MVRV Z = 4.97 (base 7 × 0.71)",
-    "distance_pct": 229.11368337449375
+    "distance_pct": 228.805065354337
    },
    {
     "id": "pi",
@@ -311,7 +311,7 @@
     "low": 146127.2633829763,
     "high": 155166.0631798614,
     "basis": "2 × 350-day SMA",
-    "distance_pct": 148.4147658458308
+    "distance_pct": 148.1818211914883
    }
   ]
  },
